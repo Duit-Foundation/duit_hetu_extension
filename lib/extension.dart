@@ -33,22 +33,6 @@ final class _HetuScriptRunner extends DuitScriptRunner<HetuInitOptions> {
       );
   }
 
-  Future<Map<String, dynamic>?> invokeMethod(
-    String functionName,
-    String? url,
-    Map<String, dynamic>? meta,
-    Map<String, dynamic>? body,
-  ) async {
-    return await _hetuInstance.invoke(
-      functionName,
-      positionalArgs: [
-        url,
-        meta,
-        body,
-      ],
-    );
-  }
-
   @override
   Future<Map<String, dynamic>?> runScript(
     String functionName, {
@@ -56,11 +40,13 @@ final class _HetuScriptRunner extends DuitScriptRunner<HetuInitOptions> {
     Map<String, dynamic>? meta,
     Map<String, dynamic>? body,
   }) async {
-    return await invokeMethod(
+    return await _hetuInstance.invoke(
       functionName,
-      url,
-      meta,
-      body,
+      positionalArgs: [
+        url,
+        meta,
+        body,
+      ],
     );
   }
 

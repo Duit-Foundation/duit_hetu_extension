@@ -1,7 +1,7 @@
 name: duit_hetu_extension
 description: "
 Hetu Script extension for the duit framework, allowing to execute dynamic scripts"
-version: 0.0.1
+version: 1.0.0
 homepage: https://github.com/Duit-Foundation/duit_hetu_extension
 
 environment:
@@ -9,7 +9,7 @@ environment:
   flutter: ">=1.17.0"
 
 dependencies:
-  duit_kernel: ^1.2.0
+  duit_kernel: ^1.2.1
   flutter:
     sdk: flutter
   hetu_script: ^0.4.2+1
