@@ -4,7 +4,7 @@ import 'package:hetu_script/hetu_script.dart';
 
 import 'options.dart';
 
-final class _HetuScriptRunner extends DuitScriptRunner<HetuInitOptions> {
+final class _HetuScriptRunner extends ScriptRunner<HetuInitOptions> {
   late final Hetu _hetuInstance;
 
   _HetuScriptRunner({

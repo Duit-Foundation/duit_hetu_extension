@@ -1,0 +1,15 @@
+//example function for update Text widget attributes
+fun testFn() {
+    var updateObj = {
+        "type": "update"
+        "updates": {
+            "text": {
+                "style": {
+                    "fontSize": 48.0,
+                },
+            },
+        },
+    };
+
+    return updateObj.toJson();
+}
